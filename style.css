@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #8c8bee, #65e8b4);
+}
+
+.Outer-box {
+    width: 35em;
+    background-color: rgb(238, 237, 237);
+    border-radius: 1em;
+    box-shadow: 0.1px 0.1px 10px 0px rgb(82, 81, 81);
+    padding: 20px;
+}
+
+#question {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 10px 10px;
+}
+
+.hr {
+    margin: 10px 0;
+}
+
+.options li {
+    width: 90%;
+    padding: 10px 0 10px 10px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.options li:hover:not([disabled]) {
+    background-color: rgb(78, 77, 77);
+    color: white;
+}
+
+.options li:disabled {
+    cursor: no-drop;
+}
+
+.next-btn {
+    height: 40px;
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid rgb(77, 75, 75);
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.next-btn:hover {
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+.options .correct {
+    width: 90%;
+    padding: 10px 0 10px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgreen;
+    color: white;
+}
+
+.options .incorrect {
+    width: 90%;
+    padding: 10px 0 10px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightcoral;
+    color: white;
+}
